@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/ChoosePet.unity
     guid: f479b2e00e59c544495547e386f454b3
+  - enabled: 1
+    path: Assets/Scenes/PetDog.unity
+    guid: 007076c0a9f523c4ab40ebaa4117468a
+  - enabled: 1
+    path: Assets/Scenes/PetLizard.unity
+    guid: 23299d414e79ec944a8d9a3df499af41
+  - enabled: 1
+    path: Assets/Scenes/Breeder Lizard.unity
+    guid: 82dafe8f118e9b74186e2a49267f15ae
+  - enabled: 1
+    path: Assets/Scenes/Pet Store Lizard.unity
+    guid: abb0380aa00e9e641baeb9c001a6ae61
   m_configObjects: {}
