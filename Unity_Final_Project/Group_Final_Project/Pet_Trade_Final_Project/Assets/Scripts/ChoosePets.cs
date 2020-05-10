@@ -17,5 +17,8 @@ public class ChoosePets : MonoBehaviour
         {
             SceneManager.LoadScene("PetLizard");
         }
+        if (Input.GetKeyDown(KeyCode.Alpha3) ) {
+            SceneManager.LoadScene("PetCat");
+        }
     }
 }
