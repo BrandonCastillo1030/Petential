@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChoosePets : MonoBehaviour
 {
-   
+    
     // Update is called once per frame
     void Update()
     {

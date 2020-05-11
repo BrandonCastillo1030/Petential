@@ -5,6 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class StoryText : MonoBehaviour
 {
+    
+    public int food = 100;
+    public int water = 100;
+    public int clean = 100;
+    public int bored = 100;
+
     public Text textComponent;
 
     public State StartingState;
@@ -18,6 +24,7 @@ public class StoryText : MonoBehaviour
         state = StartingState;
         //gets the states and the text
         textComponent.text = state.GetStateStory();
+        
     }
 
     // Update is called once per frame
