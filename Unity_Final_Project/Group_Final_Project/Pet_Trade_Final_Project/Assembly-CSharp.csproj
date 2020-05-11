@@ -64,10 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ChoosePets.cs" />
-    <Compile Include="Assets\Scripts\GetCat.cs" />
-    <Compile Include="Assets\Scripts\GetDog.cs" />
     <Compile Include="Assets\Scripts\GetLizard.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\ReptileChoices.cs" />
     <Compile Include="Assets\Scripts\State.cs" />
     <Compile Include="Assets\Scripts\StoryText.cs" />
     <Reference Include="Unity.Timeline.Editor">
