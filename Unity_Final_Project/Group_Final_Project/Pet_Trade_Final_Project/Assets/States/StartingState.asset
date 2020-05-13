@@ -15,6 +15,7 @@ MonoBehaviour:
   storyText: "You just got your pet lizard from the breeder. Since you just got home
     you decide to put the lizard in it enclosure so it can relax. After a few hours
     you decide it is time to take care of your lizard. \n\nWhat will you do? (Press
-    the key 1, 2, 3, or 4 to do the action)\n1.Give you lizard water\n2.Give your
-    lizard food\n3.Clean the enclosure\n4.Interact with your lizard\n"
-  nextStates: []
+    the key 1, 2, 3, or 4 to do the action)\n1.Give your lizard food\n2.Give your
+    lizard water\n3.Clean the enclosure\n4.Interact with your lizard\n"
+  nextStates:
+  - {fileID: 11400000, guid: 96dfb1e7ab19932418283b14e8ff7db0, type: 2}
