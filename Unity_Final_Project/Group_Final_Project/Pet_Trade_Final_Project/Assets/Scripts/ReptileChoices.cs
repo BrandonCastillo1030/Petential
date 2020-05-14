@@ -5,12 +5,12 @@ using UnityEngine;
 public class ReptileChoices : MonoBehaviour
 {
     private GameObject[] reptiles;
-    public GameObject Leo; // Petco
-    public GameObject Rico; // Petco
-    public GameObject Neo; // Petco
-    public GameObject Ted; // Bred
-    public GameObject Ned; // Bred
-    public GameObject Shred; // Bred
+    public GameObject Leo= GameObject.Find("/Canvas/Bearded DragonPT"); // Petco
+    public GameObject Rico = GameObject.Find("/Canvas/IguanaPT"); // Petco
+    public GameObject Neo = GameObject.Find("/Canvas/Leopard GeckoPT"); // Petco
+    public GameObject Ted = GameObject.Find("/Canvas/Bearded DragonB");  // Bred
+    public GameObject Ned = GameObject.Find("/Canvas/IguanaB"); // Bred
+    public GameObject Shred = GameObject.Find("/Canvas/Leopard GeckoB");// Bred
     void Start()
     {
         reptiles = new GameObject[4];
@@ -19,8 +19,8 @@ public class ReptileChoices : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Private Lizards = 1-3
-        // Petco Lizards = 4-6
+        // Pet Lizards = 1-3
+        // Private Lizards = 4-6
 
         while (reptiles.Length < 4)
         {

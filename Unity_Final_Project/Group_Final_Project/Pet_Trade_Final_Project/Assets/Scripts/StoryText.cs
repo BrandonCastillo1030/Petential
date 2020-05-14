@@ -65,26 +65,27 @@ public class StoryText : MonoBehaviour
                 if (decreaseStat == 1)
                 {
                     food = food - decreaseFood;
-                    Debug.Log(food);
+                    Debug.Log("Food Amount: "+ food);
                 }
                 else if (decreaseStat == 2)
                 {
                     water = water - decreaseWater;
-                    Debug.Log(water);
+                    Debug.Log("Water : "+water);
                 }
                 else if (decreaseStat == 3)
                 {
                     food = food - decreaseClean;
-                    Debug.Log(clean);
+                    Debug.Log("Clean :"+clean);
                 }
                 else if (decreaseStat == 4)
                 {
                     food = food - decreaseBored;
-                    Debug.Log(bored);
+                    Debug.Log("Boredom: "+ bored);
                 }
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
+<<<<<<< Updated upstream
                 state = Situation1;
 
                 decreaseFood = UnityEngine.Random.Range(5, 15);
@@ -350,6 +351,8 @@ public class StoryText : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 state = Situation3;
+=======
+>>>>>>> Stashed changes
 
                 decreaseFood = UnityEngine.Random.Range(5, 15);
                 decreaseWater = UnityEngine.Random.Range(5, 15);
