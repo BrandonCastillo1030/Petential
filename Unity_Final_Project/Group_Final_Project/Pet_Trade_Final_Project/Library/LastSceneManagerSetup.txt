@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Breeder Lizard.unity
+- path: Assets/Scenes/BreederLeo.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -9,33 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/ChoosePet.unity
-    guid: f479b2e00e59c544495547e386f454b3
-  - enabled: 1
-    path: Assets/Scenes/PetDog.unity
-    guid: 007076c0a9f523c4ab40ebaa4117468a
-  - enabled: 1
     path: Assets/Scenes/PetLizard.unity
     guid: 23299d414e79ec944a8d9a3df499af41
   - enabled: 1
-    path: Assets/Scenes/Breeder Lizard.unity
+    path: Assets/Scenes/BreederLeo.unity
     guid: 82dafe8f118e9b74186e2a49267f15ae
   - enabled: 1
-    path: Assets/Scenes/Pet Store Lizard.unity
+    path: Assets/Scenes/PetStoreLeo.unity
     guid: abb0380aa00e9e641baeb9c001a6ae61
-  - enabled: 1
-    path: Assets/Scenes/Breeder Cat.unity
-    guid: 927a6f7b056d65c4bb606c4b63e0f34c
-  - enabled: 1
-    path: Assets/Scenes/Breeder Dog.unity
-    guid: 5f41b087a8bfebf46a70cbb2699ce2eb
-  - enabled: 1
-    path: Assets/Scenes/Pet Store Cat.unity
-    guid: 26c6828a899744e4192a6e4d38813376
-  - enabled: 1
-    path: Assets/Scenes/Pet Store Dog.unity
-    guid: fdedfac43e2d7a34c8f93fd07d5f9b82
-  - enabled: 1
-    path: Assets/Scenes/PetCat.unity
-    guid: c76bbbb914fb8ce47a351ca212d8fe36
   m_configObjects: {}

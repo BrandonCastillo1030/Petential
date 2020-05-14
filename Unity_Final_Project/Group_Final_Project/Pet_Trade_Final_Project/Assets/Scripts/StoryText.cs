@@ -25,6 +25,9 @@ public class StoryText : MonoBehaviour
     public State Situation3;
 
     State state;
+
+   
+
     void Start()
     {
         //starts the game with the starting state
@@ -37,13 +40,16 @@ public class StoryText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        textComponent.text = state.GetStateStory();
         ManageState();
     }
 
-    private void ManageState()
+    public void ManageState()
     {
         var nextStates = state.GetNextStates();
-        if (state == StartingState)
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        if (state == StartingState && sceneName == "BreederLeo")
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
@@ -79,6 +85,8 @@ public class StoryText : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
+                state = Situation1;
+
                 decreaseFood = UnityEngine.Random.Range(5, 15);
                 decreaseWater = UnityEngine.Random.Range(5, 15);
                 decreaseClean = UnityEngine.Random.Range(5, 15);
@@ -106,8 +114,336 @@ public class StoryText : MonoBehaviour
                     food = food - decreaseBored;
                     Debug.Log(bored);
                 }
+
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                state = Situation1;
+
+                decreaseFood = UnityEngine.Random.Range(5, 15);
+                decreaseWater = UnityEngine.Random.Range(5, 15);
+                decreaseClean = UnityEngine.Random.Range(5, 15);
+                decreaseBored = UnityEngine.Random.Range(5, 15);
+                decreaseStat = UnityEngine.Random.Range(1, 4);
+
+                clean = clean + 10;
+                if (decreaseStat == 1)
+                {
+                    food = food - decreaseFood;
+                    Debug.Log(food);
+                }
+                else if (decreaseStat == 2)
+                {
+                    water = water - decreaseWater;
+                    Debug.Log(water);
+                }
+                else if (decreaseStat == 3)
+                {
+                    food = food - decreaseClean;
+                    Debug.Log(clean);
+                }
+                else if (decreaseStat == 4)
+                {
+                    food = food - decreaseBored;
+                    Debug.Log(bored);
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                state = Situation1;
+
+                decreaseFood = UnityEngine.Random.Range(5, 15);
+                decreaseWater = UnityEngine.Random.Range(5, 15);
+                decreaseClean = UnityEngine.Random.Range(5, 15);
+                decreaseBored = UnityEngine.Random.Range(5, 15);
+                decreaseStat = UnityEngine.Random.Range(1, 4);
+
+                bored = bored + 10;
+                if (decreaseStat == 1)
+                {
+                    food = food - decreaseFood;
+                    Debug.Log(food);
+                }
+                else if (decreaseStat == 2)
+                {
+                    water = water - decreaseWater;
+                    Debug.Log(water);
+                }
+                else if (decreaseStat == 3)
+                {
+                    food = food - decreaseClean;
+                    Debug.Log(clean);
+                }
+                else if (decreaseStat == 4)
+                {
+                    food = food - decreaseBored;
+                    Debug.Log(bored);
+                }
             }
         }
-       
+        else if (state == Situation1 && sceneName == "BreederLeo")
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                state = Situation2;
+
+                decreaseFood = UnityEngine.Random.Range(5, 15);
+                decreaseWater = UnityEngine.Random.Range(5, 15);
+                decreaseClean = UnityEngine.Random.Range(5, 15);
+                decreaseBored = UnityEngine.Random.Range(5, 15);
+                decreaseStat = UnityEngine.Random.Range(1, 4);
+
+                food = food + 10;
+                if (decreaseStat == 1)
+                {
+                    food = food - decreaseFood;
+                    Debug.Log(food);
+                }
+                else if (decreaseStat == 2)
+                {
+                    water = water - decreaseWater;
+                    Debug.Log(water);
+                }
+                else if (decreaseStat == 3)
+                {
+                    food = food - decreaseClean;
+                    Debug.Log(clean);
+                }
+                else if (decreaseStat == 4)
+                {
+                    food = food - decreaseBored;
+                    Debug.Log(bored);
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                state = Situation2;
+
+                decreaseFood = UnityEngine.Random.Range(5, 15);
+                decreaseWater = UnityEngine.Random.Range(5, 15);
+                decreaseClean = UnityEngine.Random.Range(5, 15);
+                decreaseBored = UnityEngine.Random.Range(5, 15);
+                decreaseStat = UnityEngine.Random.Range(1, 4);
+
+                food = water + 10;
+                if (decreaseStat == 1)
+                {
+                    food = food - decreaseFood;
+                    Debug.Log(food);
+                }
+                else if (decreaseStat == 2)
+                {
+                    water = water - decreaseWater;
+                    Debug.Log(water);
+                }
+                else if (decreaseStat == 3)
+                {
+                    food = food - decreaseClean;
+                    Debug.Log(clean);
+                }
+                else if (decreaseStat == 4)
+                {
+                    food = food - decreaseBored;
+                    Debug.Log(bored);
+                }
+
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                state = Situation2;
+
+                decreaseFood = UnityEngine.Random.Range(5, 15);
+                decreaseWater = UnityEngine.Random.Range(5, 15);
+                decreaseClean = UnityEngine.Random.Range(5, 15);
+                decreaseBored = UnityEngine.Random.Range(5, 15);
+                decreaseStat = UnityEngine.Random.Range(1, 4);
+
+                clean = clean + 10;
+                if (decreaseStat == 1)
+                {
+                    food = food - decreaseFood;
+                    Debug.Log(food);
+                }
+                else if (decreaseStat == 2)
+                {
+                    water = water - decreaseWater;
+                    Debug.Log(water);
+                }
+                else if (decreaseStat == 3)
+                {
+                    food = food - decreaseClean;
+                    Debug.Log(clean);
+                }
+                else if (decreaseStat == 4)
+                {
+                    food = food - decreaseBored;
+                    Debug.Log(bored);
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                state = Situation2;
+
+                decreaseFood = UnityEngine.Random.Range(5, 15);
+                decreaseWater = UnityEngine.Random.Range(5, 15);
+                decreaseClean = UnityEngine.Random.Range(5, 15);
+                decreaseBored = UnityEngine.Random.Range(5, 15);
+                decreaseStat = UnityEngine.Random.Range(1, 4);
+
+                bored = bored + 10;
+                if (decreaseStat == 1)
+                {
+                    food = food - decreaseFood;
+                    Debug.Log(food);
+                }
+                else if (decreaseStat == 2)
+                {
+                    water = water - decreaseWater;
+                    Debug.Log(water);
+                }
+                else if (decreaseStat == 3)
+                {
+                    food = food - decreaseClean;
+                    Debug.Log(clean);
+                }
+                else if (decreaseStat == 4)
+                {
+                    food = food - decreaseBored;
+                    Debug.Log(bored);
+                }
+            }
+        }
+        else if (state == Situation2 && sceneName == "BreederLeo")
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                state = Situation3;
+
+                decreaseFood = UnityEngine.Random.Range(5, 15);
+                decreaseWater = UnityEngine.Random.Range(5, 15);
+                decreaseClean = UnityEngine.Random.Range(5, 15);
+                decreaseBored = UnityEngine.Random.Range(5, 15);
+                decreaseStat = UnityEngine.Random.Range(1, 4);
+
+                food = food + 10;
+                if (decreaseStat == 1)
+                {
+                    food = food - decreaseFood;
+                    Debug.Log(food);
+                }
+                else if (decreaseStat == 2)
+                {
+                    water = water - decreaseWater;
+                    Debug.Log(water);
+                }
+                else if (decreaseStat == 3)
+                {
+                    food = food - decreaseClean;
+                    Debug.Log(clean);
+                }
+                else if (decreaseStat == 4)
+                {
+                    food = food - decreaseBored;
+                    Debug.Log(bored);
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                state = Situation3;
+
+                decreaseFood = UnityEngine.Random.Range(5, 15);
+                decreaseWater = UnityEngine.Random.Range(5, 15);
+                decreaseClean = UnityEngine.Random.Range(5, 15);
+                decreaseBored = UnityEngine.Random.Range(5, 15);
+                decreaseStat = UnityEngine.Random.Range(1, 4);
+
+                food = water + 10;
+                if (decreaseStat == 1)
+                {
+                    food = food - decreaseFood;
+                    Debug.Log(food);
+                }
+                else if (decreaseStat == 2)
+                {
+                    water = water - decreaseWater;
+                    Debug.Log(water);
+                }
+                else if (decreaseStat == 3)
+                {
+                    food = food - decreaseClean;
+                    Debug.Log(clean);
+                }
+                else if (decreaseStat == 4)
+                {
+                    food = food - decreaseBored;
+                    Debug.Log(bored);
+                }
+
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                state = Situation3;
+
+                decreaseFood = UnityEngine.Random.Range(5, 15);
+                decreaseWater = UnityEngine.Random.Range(5, 15);
+                decreaseClean = UnityEngine.Random.Range(5, 15);
+                decreaseBored = UnityEngine.Random.Range(5, 15);
+                decreaseStat = UnityEngine.Random.Range(1, 4);
+
+                clean = clean + 10;
+                if (decreaseStat == 1)
+                {
+                    food = food - decreaseFood;
+                    Debug.Log(food);
+                }
+                else if (decreaseStat == 2)
+                {
+                    water = water - decreaseWater;
+                    Debug.Log(water);
+                }
+                else if (decreaseStat == 3)
+                {
+                    food = food - decreaseClean;
+                    Debug.Log(clean);
+                }
+                else if (decreaseStat == 4)
+                {
+                    food = food - decreaseBored;
+                    Debug.Log(bored);
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                state = Situation3;
+
+                decreaseFood = UnityEngine.Random.Range(5, 15);
+                decreaseWater = UnityEngine.Random.Range(5, 15);
+                decreaseClean = UnityEngine.Random.Range(5, 15);
+                decreaseBored = UnityEngine.Random.Range(5, 15);
+                decreaseStat = UnityEngine.Random.Range(1, 4);
+
+                bored = bored + 10;
+                if (decreaseStat == 1)
+                {
+                    food = food - decreaseFood;
+                    Debug.Log(food);
+                }
+                else if (decreaseStat == 2)
+                {
+                    water = water - decreaseWater;
+                    Debug.Log(water);
+                }
+                else if (decreaseStat == 3)
+                {
+                    food = food - decreaseClean;
+                    Debug.Log(clean);
+                }
+                else if (decreaseStat == 4)
+                {
+                    food = food - decreaseBored;
+                    Debug.Log(bored);
+                }
+            }
+        }
     }
 }
