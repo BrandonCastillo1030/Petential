@@ -64,11 +64,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ChoosePets.cs" />
+    <Compile Include="Assets\Scripts\FadeIntoPets.cs" />
     <Compile Include="Assets\Scripts\GetLizard.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\ReptileChoices.cs" />
     <Compile Include="Assets\Scripts\State.cs" />
     <Compile Include="Assets\Scripts\StoryText.cs" />
+    <Compile Include="Assets\Scripts\VetScenario1.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/brand/Documents/Petential/Unity_Final_Project/Group_Final_Project/Pet_Trade_Final_Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
