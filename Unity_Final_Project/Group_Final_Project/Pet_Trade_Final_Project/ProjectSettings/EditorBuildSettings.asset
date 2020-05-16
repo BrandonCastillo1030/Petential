@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PetLizard.unity
     guid: 23299d414e79ec944a8d9a3df499af41
   - enabled: 1
-    path: Assets/Scenes/BreederLeo.unity
+    path: Assets/Scenes/Leo.unity
     guid: 82dafe8f118e9b74186e2a49267f15ae
   - enabled: 1
     path: Assets/Scenes/PetStoreLeo.unity

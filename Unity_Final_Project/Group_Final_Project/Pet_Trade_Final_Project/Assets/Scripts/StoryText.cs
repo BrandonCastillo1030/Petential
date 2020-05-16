@@ -84,8 +84,7 @@ public class StoryText : MonoBehaviour
                 }
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-<<<<<<< Updated upstream
+
                 state = Situation1;
 
                 decreaseFood = UnityEngine.Random.Range(5, 15);
@@ -180,9 +179,7 @@ public class StoryText : MonoBehaviour
                     food = food - decreaseBored;
                     Debug.Log(bored);
                 }
-            }
-        }
-        else if (state == Situation1 && sceneName == "BreederLeo")
+            }    else if (state == Situation1 && sceneName == "Leo")
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
@@ -314,7 +311,7 @@ public class StoryText : MonoBehaviour
                 }
             }
         }
-        else if (state == Situation2 && sceneName == "BreederLeo")
+        else if (state == Situation2 && sceneName == "Leo")
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
@@ -351,8 +348,7 @@ public class StoryText : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 state = Situation3;
-=======
->>>>>>> Stashed changes
+
 
                 decreaseFood = UnityEngine.Random.Range(5, 15);
                 decreaseWater = UnityEngine.Random.Range(5, 15);
