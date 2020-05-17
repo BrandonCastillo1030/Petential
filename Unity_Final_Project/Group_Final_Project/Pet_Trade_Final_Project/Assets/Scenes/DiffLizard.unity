@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 24082232}
   - component: {fileID: 24082231}
   - component: {fileID: 24082233}
+  - component: {fileID: 24082234}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: Untagged
@@ -151,7 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f04e04a14a7da45acda1274b345776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
 --- !u!4 &24082232
 Transform:
   m_ObjectHideFlags: 0
@@ -178,12 +178,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ff02cdd76a0b04bacd585cb7285ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reptiles: []
   Leo: {fileID: 1041598983}
   Rico: {fileID: 473314302}
   Neo: {fileID: 195359758}
   Ted: {fileID: 1953149507}
   Ned: {fileID: 878510522}
   Shred: {fileID: 773179961}
+  storytext: {fileID: 0}
+  st: {fileID: 0}
+--- !u!114 &24082234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24082230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fed1281867c657469f6c297a0247c50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
+  food: 100
+  water: 100
+  clean: 100
+  health: 100
+  bored: 100
+  decreaseStat: 0
+  decreaseFood: 0
+  decreaseWater: 0
+  decreaseClean: 0
+  decreaseBored: 0
+  textComponent: {fileID: 0}
+  StartingState: {fileID: 11400000, guid: be38141070719d24fae9d6621c4776a5, type: 2}
+  Situation1: {fileID: 0}
+  Situation2: {fileID: 0}
+  Situation3: {fileID: 0}
+  MoneyText: {fileID: 0}
+  FoodText: {fileID: 0}
+  WaterText: {fileID: 0}
+  CleanText: {fileID: 0}
 --- !u!1 &195359758 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3706887292178354425, guid: 06a8bf1b8962a354c9fbdd7861c435bf,

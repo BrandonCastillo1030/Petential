@@ -239,8 +239,8 @@ public class StoryText : MonoBehaviour
                     SceneManager.LoadScene("GetBetterVet");
                 }
             }
-        }
-        else if (state == Situation1 && sceneName == "BreederLeo")
+        
+        else if (state == Situation1 && sceneName == "Leo")
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
