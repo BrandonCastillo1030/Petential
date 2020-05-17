@@ -12,15 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PetLizard.unity
     guid: 23299d414e79ec944a8d9a3df499af41
   - enabled: 1
-    path: Assets/Scenes/Leo.unity
+    path: Assets/Scenes/Lizard.unity
     guid: 82dafe8f118e9b74186e2a49267f15ae
   - enabled: 1
     path: Assets/Scenes/PetStoreLeo.unity
     guid: abb0380aa00e9e641baeb9c001a6ae61
-  - enabled: 1
-    path: Assets/Scenes/GetBetterVet.unity
-    guid: a4a8bf19b6d3bf0429e511d274570ca7
-  - enabled: 1
-    path: Assets/Scenes/BadVet.unity
-    guid: 54a68d3e530205b4ba4552fb05dec384
   m_configObjects: {}

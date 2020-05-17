@@ -12,5 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0085f226ea6d44690068589817930f, type: 3}
   m_Name: State6
   m_EditorClassIdentifier: 
-  storyText: G
+  storyText: 'DAY 30: 5 days have past and you went to the vet again for the checkup.
+    Which cost you another $60. Neo seems to be recovering at a good pace now. You
+    get home with Neo and see the time its time to take care of him.
+
+
+    What will
+    you do? (Press the key 1, 2, 3, or 4 to do the action)
+
+    1.Give your lizard
+    food
+
+    2.Give your lizard water
+
+    3.Clean the enclosure
+
+    4.Interact
+    with your lizard'
   nextStates: []

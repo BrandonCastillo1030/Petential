@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0085f226ea6d44690068589817930f, type: 3}
   m_Name: State4
   m_EditorClassIdentifier: 
-  storyText: E
+  storyText: "\n\n\nDAY 25: Neo is still acting strange so you decide to make a appointment
+    for the vet. To see if there is anything wrong with Neo\n\n\n                                                                              
+    Press [1] to see the results"
   nextStates:
   - {fileID: 11400000, guid: 7bfd2c01edf06684a827948e8bbe514b, type: 2}

@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0085f226ea6d44690068589817930f, type: 3}
   m_Name: State1
   m_EditorClassIdentifier: 
-  storyText: A
+  storyText: "DAY 3:Neo seems to be doing fine and he is pretty active.You just got
+    home and now its time to take care of Neo. \n\nWhat will you do? (Press the key
+    1, 2, 3, or 4 to do the action)\n1.Give your lizard food\n2.Give your lizard
+    water\n3.Clean the enclosure\n4.Interact with your lizard"
   nextStates:
   - {fileID: 11400000, guid: 0da811dfae82320469a168278ec54d78, type: 2}
