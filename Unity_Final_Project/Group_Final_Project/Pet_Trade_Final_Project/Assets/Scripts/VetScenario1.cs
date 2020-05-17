@@ -20,12 +20,13 @@ public class VetScenario1 : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        if (sceneName == "GoodVet")
+        if (sceneName == "GetBetterVet")
         {
            
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 FadertoLevel(1);
+                
             }
         }
         
@@ -46,6 +47,6 @@ public class VetScenario1 : MonoBehaviour
 
     public void OnFadeComplete()
     {
-        SceneManager.LoadScene("BreederLeo");
+        SceneManager.LoadScene("Leo");
     }
 }

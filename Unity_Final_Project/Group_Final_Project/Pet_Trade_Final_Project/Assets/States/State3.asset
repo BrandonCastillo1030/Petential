@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: State3
   m_EditorClassIdentifier: 
   storyText: C
-  nextStates: []
+  nextStates:
+  - {fileID: 11400000, guid: ebbea6064eb7abd488b9bb031b40d26a, type: 2}

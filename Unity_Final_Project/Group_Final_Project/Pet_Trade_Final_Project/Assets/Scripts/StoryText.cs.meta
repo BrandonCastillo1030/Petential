@@ -5,9 +5,17 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - textComponent: {instanceID: 0}
-  - StartingState: {fileID: 11400000, guid: be38141070719d24fae9d6621c4776a5, type: 2}
+  - StartingState: {instanceID: 0}
   - Situation1: {instanceID: 0}
   - Situation2: {instanceID: 0}
+  - Situation3: {instanceID: 0}
+  - Situation4: {instanceID: 0}
+  - Situation5: {instanceID: 0}
+  - Situation6: {instanceID: 0}
+  - MoneyText: {instanceID: 0}
+  - FoodText: {instanceID: 0}
+  - WaterText: {instanceID: 0}
+  - CleanText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

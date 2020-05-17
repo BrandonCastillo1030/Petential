@@ -305,7 +305,6 @@ MonoBehaviour:
   health: 100
   bored: 100
   decreaseStat: 0
-  randomVet: 0
   decreaseFood: 0
   decreaseWater: 0
   decreaseClean: 0
@@ -315,10 +314,15 @@ MonoBehaviour:
   Situation1: {fileID: 11400000, guid: 96dfb1e7ab19932418283b14e8ff7db0, type: 2}
   Situation2: {fileID: 11400000, guid: 0da811dfae82320469a168278ec54d78, type: 2}
   Situation3: {fileID: 11400000, guid: f408c626749136a40ba7fb1d626923cc, type: 2}
+  Situation4: {fileID: 11400000, guid: ebbea6064eb7abd488b9bb031b40d26a, type: 2}
+  Situation5: {fileID: 11400000, guid: 7bfd2c01edf06684a827948e8bbe514b, type: 2}
+  Situation6: {fileID: 11400000, guid: 366773ce6118fac4bb67df70e11786a6, type: 2}
   MoneyText: {fileID: 1759918635}
   FoodText: {fileID: 427748282}
   WaterText: {fileID: 1807294126}
   CleanText: {fileID: 1926497768}
+  BoredText: {fileID: 1168922165}
+  HealthText: {fileID: 1884857333}
 --- !u!4 &313051633
 Transform:
   m_ObjectHideFlags: 0
@@ -597,6 +601,7 @@ RectTransform:
   - {fileID: 1807294125}
   - {fileID: 1926497767}
   - {fileID: 1168922164}
+  - {fileID: 1884857332}
   - {fileID: 554333006}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -618,7 +623,7 @@ GameObject:
   - component: {fileID: 1168922166}
   - component: {fileID: 1168922165}
   m_Layer: 5
-  m_Name: Text (4)
+  m_Name: Bored
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1065,6 +1070,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807294124}
   m_CullTransparentMesh: 0
+--- !u!1 &1884857331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1884857332}
+  - component: {fileID: 1884857334}
+  - component: {fileID: 1884857333}
+  m_Layer: 5
+  m_Name: Health
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1884857332
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884857331}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1010065943}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 821.1, y: 175}
+  m_SizeDelta: {x: 369.1573, y: 69.46043}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1884857333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884857331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 54
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Health:'
+--- !u!222 &1884857334
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884857331}
+  m_CullTransparentMesh: 0
 --- !u!1 &1913235666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,7 +1408,7 @@ PrefabInstance:
     - target: {fileID: 5862528939925859653, guid: b7ff4fa5e009d9a45a52ab11580b4999,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5862528939925859653, guid: b7ff4fa5e009d9a45a52ab11580b4999,
         type: 3}
